@@ -152,7 +152,7 @@ async function getQRData(req, res) {
             return res.status(404).json({ message: 'Shop/Doctor not found.' });
         }
 
-        const baseUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+        const baseUrl = process.env.FRONTEND_URL || 'https://queue-saver-1.onrender.com';
         const qrUrl = `${baseUrl}/join/${shopId}`;
 
         res.status(200).json({
