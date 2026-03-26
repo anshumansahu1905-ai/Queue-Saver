@@ -2,7 +2,7 @@
 import { io } from "socket.io-client";
 import { useState, useEffect, useRef, useCallback } from "react";
 
-const API = "http://localhost:3000/api";
+const API = "https://queue-saver.onrender.com/api";
 
 const api = {
   post: async (path, body, token) => {
